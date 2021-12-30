@@ -1,4 +1,4 @@
-# hifiberryos_hacks
+# HifiberryOS Hacks
 Hacks for the HifiberryOS
 
 ## Auto Play
