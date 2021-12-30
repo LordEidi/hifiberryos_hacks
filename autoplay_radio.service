@@ -1,0 +1,15 @@
+[Unit]
+Description=Run script at startup after all systemd services are loaded (autoplay)
+Requires=mpd.service
+After=mpd.service
+
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/root/run_radio.sh
+TimeoutStartSec=0
+ExecStartPre=/bin/sleep 10
+
+[Install]
+WantedBy=default.target
